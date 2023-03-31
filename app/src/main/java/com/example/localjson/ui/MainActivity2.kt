@@ -26,6 +26,7 @@ class MainActivity2 : AppCompatActivity() {
 
         val id1:TextView = findViewById<TextView>(R.id.tv_id)
         val id = intent.extras!!.getString("id")
+        id1.setText(id)
         val department_name= intent.extras!!.getString("department_name")
         depName.setText(department_name)
         val facultyNo = intent.extras!!.getString("facultyNo")
